@@ -83,5 +83,14 @@ a {
 
 #movies {
   padding-top: 40pt;
+  padding-bottom: 0pt;
 }
 
+#moviesList {
+  padding-top: 0pt;
+  line-height: 1.6;
+}
+
+#prevNext {
+  background-color: black;
+}

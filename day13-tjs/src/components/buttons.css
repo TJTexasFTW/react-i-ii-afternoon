@@ -1,0 +1,27 @@
+#Previous {
+    background-color: black;
+    color: white;
+    border-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+  
+}
+
+#Next {
+    background-color: black;
+    color: white;
+    border-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.Buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 130pt;
+    padding-top: 20pt;
+    padding-right: 130pt;
+}

@@ -3,6 +3,7 @@ import './App.css';
 import data from './components/data'
 import Home from './components/home'
 import Info from './components/info'
+import Buttons from './components/buttons'
 
 
 class App extends Component {
@@ -23,6 +24,7 @@ constructor () {
       <div className="App">
         <Home />
         <Info data = {this.state.students} />
+        <a><Buttons /></a>
       </div>
     );
   }
