@@ -57,3 +57,31 @@
   margin: auto;
   padding-left: 20pt;
 }
+
+#fullName {
+  font-size: 24pt;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  text-decoration-color: cornflowerblue;
+  text-align: left;
+  padding-top: 20pt;
+  padding-left: 10pt;
+}
+
+#info2 {
+  text-align: left;
+  font-size: 18pt;
+  padding-top: 50pt;
+  line-height: 1.4;
+  margin-left: 10pt;
+}
+
+a {
+  font-weight: bold;
+}
+
+#movies {
+  padding-top: 40pt;
+}
+

@@ -7,14 +7,22 @@ import Info from './components/info'
 
 class App extends Component {
 
+constructor () {
+  super();
 
+    this.state = {
+      students: data
+    }
+
+}
 
 
   render() {
+    console.log(this.state.students);
     return (
       <div className="App">
-      <Home />
-      <Info />
+        <Home />
+        <Info data = {this.state.students} />
       </div>
     );
   }
