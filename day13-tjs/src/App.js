@@ -24,7 +24,7 @@ constructor () {
       <div className="App">
         <Home />
         <Info data = {this.state.students} />
-        <a><Buttons /></a>
+        {/* <a id="prevNext"><Buttons /></a> */}
       </div>
     );
   }

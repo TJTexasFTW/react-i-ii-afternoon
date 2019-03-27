@@ -22,7 +22,7 @@ const data = [
     city: "Dzvinogrud",
     country: "Ukraine",
     employer: "Vinte",
-    title: "Data Coordiator",
+    title: "Data Coordinator",
     favoriteMovies: [
       "Camp",
       "Her Highness and the Bellboy",

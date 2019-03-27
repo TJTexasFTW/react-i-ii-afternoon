@@ -4,13 +4,20 @@ import Buttons from './buttons'
 class Info extends Component {
     
     constructor() {
-        super()
+        super();
 
         this.state = {
-            index: 0
+            recordNum: 0
         }
-    }
 
+        this.increaseIndex = this.increaseIndex.bind(this);
+        this.decreaseIndex = this.decreaseIndex.bind(this);
+    
+
+    };
+
+    // this.handleLogin = this.handleLogin.bind(this);
+ 
 
 // This fucking sucks!!!
 // let name = '';
@@ -44,22 +51,41 @@ getfavoriteMovies(index) {
     )
 }
 
+increaseIndex() {
+    if (this.state.recordNum === this.props.data.length-1) {
+        return
+    } 
+    this.setState({recordNum: this.state.recordNum+1});
+}
+
+decreaseIndex() {
+    if (this.state.recordNum === 0) {
+        return
+    } 
+    this.setState({recordNum: this.state.recordNum-1});
+}
 
 
   render() {
-      
+
+    console.log(this.state.recordNum)
+
     return (
-      <div className="Info">
+
+
+<div className="Info">
+
             <article id="counter"></article>
-            <article id="fullName">{this.getName(1)}</article>
+            <article id="fullName">{this.getName(this.state.recordNum)}</article>
         <div id="info2">
-            <article id="city"><a>From: </a>{this.getCity(1)}</article>
-            <article id="title"><a>Job Title: </a>{this.getTitle(1)}</article>
-            <article id="employer"><a>Employer: </a>{this.getEmployer(1)}</article>
+            <article id="city"><a>From: </a>{this.getCity(this.state.recordNum)}</article>
+            <article id="title"><a>Job Title: </a>{this.getTitle(this.state.recordNum)}</article>
+            <article id="employer"><a>Employer: </a>{this.getEmployer(this.state.recordNum)}</article>
             <article  id="movies"><a>Favorite Movies</a></article>
             <ol>
-                <article id="moviesList"><a></a>{this.getfavoriteMovies(1)}</article>
+                <article id="moviesList"><a></a>{this.getfavoriteMovies(this.state.recordNum)}</article>
             </ol>
+            <Buttons increaseIndex={this.increaseIndex} decreaseIndex={this.decreaseIndex}/>
         </div>
 
       </div>
