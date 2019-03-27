@@ -91,3 +91,10 @@ a {
   line-height: 1.6;
 }
 
+#counter {
+  text-align: right;
+  font-size: 24pt;
+  font-weight: bold;
+  margin-right: 20pt;
+}
+

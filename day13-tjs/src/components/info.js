@@ -75,7 +75,7 @@ decreaseIndex() {
 
 <div className="Info">
 
-            <article id="counter"></article>
+            <article id="counter">{this.state.recordNum+1} / {this.props.data.length}</article>
             <article id="fullName">{this.getName(this.state.recordNum)}</article>
         <div id="info2">
             <article id="city"><a>From: </a>{this.getCity(this.state.recordNum)}</article>
