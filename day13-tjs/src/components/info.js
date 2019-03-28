@@ -13,7 +13,6 @@ class Info extends Component {
         this.increaseIndex = this.increaseIndex.bind(this);
         this.decreaseIndex = this.decreaseIndex.bind(this);
     
-
     };
 
     // this.handleLogin = this.handleLogin.bind(this);
@@ -75,16 +74,14 @@ decreaseIndex() {
 
 <div className="Info">
 
-            <article id="counter">{this.state.recordNum+1} / {this.props.data.length}</article>
+            <article id="counter">{this.state.recordNum+1}/{this.props.data.length}</article>
             <article id="fullName">{this.getName(this.state.recordNum)}</article>
         <div id="info2">
             <article id="city"><a>From: </a>{this.getCity(this.state.recordNum)}</article>
             <article id="title"><a>Job Title: </a>{this.getTitle(this.state.recordNum)}</article>
             <article id="employer"><a>Employer: </a>{this.getEmployer(this.state.recordNum)}</article>
             <article  id="movies"><a>Favorite Movies</a></article>
-            <ol>
-                <article id="moviesList"><a></a>{this.getfavoriteMovies(this.state.recordNum)}</article>
-            </ol>
+            <ol><article id="moviesList">{this.getfavoriteMovies(this.state.recordNum)}</article></ol>
             <Buttons increaseIndex={this.increaseIndex} decreaseIndex={this.decreaseIndex}/>
         </div>
 

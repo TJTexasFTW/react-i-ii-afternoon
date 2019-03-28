@@ -33,48 +33,49 @@
 }
 
 .Home {
-  height: 7vh;
+  height: 10vh;
   width: 100vw;
-  background-color: cornflowerblue;
+  background-color: #3498DB;
   color: black;
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial Black", Gadget, sans-serif;
   font-size: 18pt;
-  font-weight: bold;
-  padding-top: 15pt;
+  /* font-weight: bold; */
+  padding-top: 29pt;
   padding-left: 20pt;
   margin-bottom: 70pt;
   /* margin-left: 10pt; */
 } 
 
 .Info {
-  height: 60vh;
+  height: 61vh;
   width: 70vw;
   background-color: white;
   text-align: center;
   /* margin-top: 80pt;
   margin-left: 70pt; */
   margin: auto;
-  padding-left: 20pt;
+  padding-left: 40pt;
 }
 
 #fullName {
-  font-size: 24pt;
+  font-size: 30pt;
   font-weight: bolder;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial Black", Gadget, sans-serif;
   text-decoration: underline;
-  text-decoration-color: cornflowerblue;
+  text-decoration-color:#3498DB;
   text-align: left;
-  padding-top: 20pt;
+  margin-top: -10pt;
   padding-left: 10pt;
 }
 
 #info2 {
   text-align: left;
-  font-size: 18pt;
-  padding-top: 50pt;
+  font-size: 22pt;
+  padding-top: 20pt;
   line-height: 1.4;
   margin-left: 10pt;
+  padding-bottom:0%;
 }
 
 a {
@@ -82,19 +83,23 @@ a {
 }
 
 #movies {
-  padding-top: 40pt;
+  padding-top: 30pt;
   padding-bottom: 0pt;
+  line-height: 1;
+  margin-bottom: -20pt; 
 }
 
 #moviesList {
   padding-top: 0pt;
-  line-height: 1.6;
+  line-height: 1.2;
+  margin-left: 45pt;
 }
 
 #counter {
   text-align: right;
-  font-size: 24pt;
-  font-weight: bold;
+  font-size: 30pt;
+  font-weight: bolder;
+  font-family: "Arial Black", Gadget, sans-serif; 
   margin-right: 20pt;
 }
 
